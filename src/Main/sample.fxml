@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="388.0" prefWidth="618.0" style="-fx-background-color: dark blue;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.SampleController">
+   <children>
+      <Label layoutX="127.0" layoutY="49.0" prefHeight="31.0" prefWidth="55.0" text="Register" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="170.0" prefHeight="17.0" prefWidth="93.0" text="Enter Username " />
+      <Label layoutX="42.0" layoutY="130.0" text="Enter ID" />
+      <Label layoutX="23.0" layoutY="213.0" text="Enter Password" />
+      <TextField fx:id="registerID" layoutX="139.0" layoutY="126.0" />
+      <TextField fx:id="registerName" layoutX="139.0" layoutY="166.0" />
+      <PasswordField fx:id="registerPassword" layoutX="139.0" layoutY="209.0" />
+      <Button fx:id="RegisterButton" layoutX="122.0" layoutY="258.0" mnemonicParsing="false" text="Register !" />
+      <ImageView fitHeight="388.0" fitWidth="323.0" layoutX="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/photo-1605377347958-e8bd4c00ba1d.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
