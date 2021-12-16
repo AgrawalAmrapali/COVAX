@@ -1,10 +1,14 @@
 package UserLogin;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 
 import javax.mail.*;
@@ -13,8 +17,10 @@ import javax.mail.internet.*;
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.io.File;
+import java.net.Socket;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.net.UnknownHostException;
 import java.util.Properties;
 
 import javax.mail.Session;
@@ -31,6 +37,23 @@ public class UserLogin {
     public TextField Email;
     public PasswordField otp;
     private int OTP;
+    private Socket client;
+    private BufferedReader in;
+    private PrintWriter out;
+
+
+    public UserLogin(){
+        try {
+            client = new Socket("localhost", 9806);
+            in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+            out = new PrintWriter(client.getOutputStream(), true);
+            System.out.println("Connected to server");
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void LoginListener(ActionEvent actionEvent) {
         if ( otp.getText().equals("")) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -43,7 +66,44 @@ public class UserLogin {
 
         } else {
             if (Integer.parseInt(otp.getText()) == OTP) {
-                System.out.println("Ypu are logged in");
+                {   if(PhoneNo.getText().equals(""))
+                {
+                    try {
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("/UserLogin/accountDetails.fxml"));
+                        Parent root = loader.load();
+                        AccountDetails user = loader.getController();
+                        user.setConnection(client, in, out);
+                        user.setEmail(Email.getText());
+
+                        Stage stage = (Stage) Login.getScene().getWindow();
+                        stage.setScene(new Scene(root, 500, 500));
+                        stage.setTitle("Dashboard");
+                        stage.show();
+                        System.out.println("You are logged in");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                    else
+                {
+                    try {
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("/UserLogin/accountDetails.fxml"));
+                        Parent root = loader.load();
+                        AccountDetails user = loader.getController();
+                        user.setPhoneNo(PhoneNo.getText());
+                        user.setConnection(client, in, out);
+                        Stage stage = (Stage) Login.getScene().getWindow();
+                        stage.setScene(new Scene(root, 500, 500));
+                        stage.setTitle("Dashboard");
+                        stage.show();
+                        System.out.println("You are logged in");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+
+                }
             } else {
                 System.out.println("Ypu are not logged in");
             }
@@ -61,7 +121,7 @@ public class UserLogin {
 
             alert.showAndWait();
 
-        } else /*if(Email.getText().equals(""))*/{
+        } else if(Email.getText().equals("")){
 
 
             Random ran = new Random();
@@ -94,7 +154,7 @@ public class UserLogin {
                 e.printStackTrace();
             }
         }
-        /*else if(PhoneNo.getText().equals(""))
+        else if(PhoneNo.getText().equals(""))
         {
             String host="smtp.gmail.com";
 
@@ -172,6 +232,6 @@ public class UserLogin {
 
             alert.showAndWait();
         }
-*/
+
     }
 }

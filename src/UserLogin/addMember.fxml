@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="599.0" style="-fx-background-color: #82CAFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.AddMember">
+    <children>
+        <Label layoutX="235.0" layoutY="44.0" prefHeight="28.0" prefWidth="162.0" text="Add Member" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="102.0" layoutY="160.0" prefHeight="18.0" prefWidth="141.0" text="Member Id proof Number" />
+        <Label layoutX="166.0" layoutY="117.0" text="Member Name" />
+        <Label layoutX="133.0" layoutY="204.0" text="Gender of Member" />
+        <TextField fx:id="MemName" layoutX="265.0" layoutY="113.0" />
+        <TextField fx:id="IdProof" layoutX="265.0" layoutY="157.0" />
+        <Button fx:id="RegisterButton" layoutX="479.0" layoutY="307.0" mnemonicParsing="false" onAction="#BrowseClicked" text="Browse" />
+        <Label layoutX="212.0" layoutY="279.0" text="Upload Member Id proof here" />
+        <ListView fx:id="fileBox" layoutX="102.0" layoutY="307.0" prefHeight="26.0" prefWidth="339.0" />
+        <Button fx:id="backBtn" layoutX="286.0" layoutY="341.0" mnemonicParsing="false" onAction="#uploadClicked" text="Submit" />
+      <Label layoutX="350.0" layoutY="195.0" prefHeight="34.0" prefWidth="200.0" text="Enter &quot;F&quot; for Female and &quot;M&quot; for Male" />
+      <Label layoutX="206.0" layoutY="238.0" text="Age" />
+      <TextField fx:id="Age" layoutX="265.0" layoutY="234.0" />
+      <TextField fx:id="Gen" layoutX="264.0" layoutY="199.0" prefHeight="26.0" prefWidth="72.0" />
+      <Button layoutX="372.0" layoutY="341.0" mnemonicParsing="false" text="Back" />
+    </children>
+
+</AnchorPane>

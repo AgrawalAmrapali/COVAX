@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #82CAFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.AccountDetails">
+
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="191.0" text="Account Details">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="47.0" prefHeight="18.0" prefWidth="238.0" text="Registered Mobile number-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="number" layoutX="235.0" layoutY="47.0" style="-fx-background-color: #82CAFF;" />
+      <Label layoutX="252.0" layoutY="96.0" prefHeight="28.0" prefWidth="141.0" text="List of members">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="1.0" layoutY="136.0" prefHeight="200.0" prefWidth="621.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="88.80000150203705" text="Member_ID" />
+            <TableColumn fx:id="col_name" prefWidth="136.79999542236328" text="Member_Name" />
+            <TableColumn fx:id="col_YOB" prefWidth="96.0" text="ID Proof" />
+            <TableColumn fx:id="col_Dose1" minWidth="0.0" prefWidth="70.0" text="Dose1" />
+            <TableColumn fx:id="col_Dose2" prefWidth="74.39996337890625" text="Dose2" />
+            <TableColumn fx:id="col_Vaccine" prefWidth="152.99996948242188" text="Vaccine Name" />
+         </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="227.0" layoutY="356.0" mnemonicParsing="false" onAction="#deleteListener" style="-fx-background-color: #033E3E;" text="Delete" textFill="#eae5e5" />
+      <Button fx:id="Addmember" layoutX="323.0" layoutY="356.0" mnemonicParsing="false" onAction="#addmember" style="-fx-background-color: #033E3E;" text="Add member" textFill="#e8e0e0" />
+      <Button fx:id="fetchBtn" layoutX="133.0" layoutY="356.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #033E3E;" text="refresh" textFill="#f0e6e6" />
+      <Label layoutX="14.0" layoutY="73.0" prefHeight="26.0" prefWidth="129.0" text="Registers Email -">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail" layoutX="144.0" layoutY="73.0" prefHeight="26.0" prefWidth="470.0" style="-fx-background-color: #82CAFF;" />
+      <Button fx:id="download" layoutX="450.0" layoutY="356.0" mnemonicParsing="false" onAction="#onClickDownload" style="-fx-background-color: #033E3E;" text="Download Certificate" textFill="#f0e5e5" />
+   </children>
+</AnchorPane>
