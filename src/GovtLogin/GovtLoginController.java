@@ -15,13 +15,14 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class GovtLoginController {
-   public Button Login;
-   public TextField PhoneNo;
-   public PasswordField Password;
+    public Button Login;
+    public TextField PhoneNo;
+    public PasswordField Password;
+}
 
 
 
-    public void LoginListener(javafx.event.ActionEvent actionEvent) {
+   /* public void LoginListener(javafx.event.ActionEvent actionEvent) {
         if (PhoneNo.getText().equals("") || Password.getText().equals("")) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Information Dialog");
@@ -54,5 +55,5 @@ public class GovtLoginController {
             }
         }
     }
-}
+}*/
 

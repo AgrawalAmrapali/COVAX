@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GovtLogin.GovtLoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GovtLogin.getGovtLogin">
 
    <children>
       <ImageView fitHeight="386.0" fitWidth="679.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
@@ -15,7 +15,7 @@
       </ImageView>
       <AnchorPane layoutX="308.0" prefHeight="386.0" prefWidth="309.0" style="-fx-background-color: #82CAFF;">
          <children>
-            <Button fx:id="Login" layoutX="36.0" layoutY="266.0" mnemonicParsing="false" onAction="#LoginListener" prefHeight="37.0" prefWidth="230.0" style="-fx-background-color: #033E3E;" text="Login!!!" textFill="#ebede4">
+            <Button fx:id="Login" layoutX="36.0" layoutY="266.0" mnemonicParsing="false" onAction="#getGovt" prefHeight="37.0" prefWidth="230.0" style="-fx-background-color: #033E3E;" text="Login!!!" textFill="#ebede4">
                <font>
                   <Font size="23.0" />
                </font></Button>

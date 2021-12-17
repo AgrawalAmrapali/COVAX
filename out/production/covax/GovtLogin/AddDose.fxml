@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #82CAFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GovtLogin.AddDosse">
+   <children>
+      <Label layoutX="251.0" layoutY="27.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #82CAFF;" text="Add Slots">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="167.0" layoutY="104.0" text="Vaccination Center Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="140.0" prefHeight="22.0" prefWidth="76.0" text="Vaccine Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Dose1" layoutX="334.0" layoutY="178.0" mnemonicParsing="false" text="Dose1">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="dose" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Dose2" layoutX="484.0" layoutY="178.0" mnemonicParsing="false" text="Dose2" toggleGroup="$dose">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="238.0" layoutY="178.0" text="Dose Type">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="217.0" text="Age">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="254.0" text="Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="centerId" layoutX="328.0" layoutY="102.0" />
+      <TextField fx:id="vaccineId" layoutX="328.0" layoutY="138.0" />
+      <RadioButton fx:id="age1" layoutX="334.0" layoutY="219.0" mnemonicParsing="false" text="Between 18 to 45">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="age" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="age2" layoutX="484.0" layoutY="221.0" mnemonicParsing="false" text="Above 45" toggleGroup="$age">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="submit" layoutX="307.0" layoutY="360.0" mnemonicParsing="false" onAction="#addingmem" text="Submit" />
+      <DatePicker fx:id="datefor" layoutX="328.0" layoutY="252.0" />
+      <Label layoutX="272.0" layoutY="295.0" text="Slot">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="slot1" layoutX="337.0" layoutY="297.0" mnemonicParsing="false" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="slot" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="slot2" layoutX="381.0" layoutY="297.0" mnemonicParsing="false" text="2" toggleGroup="$slot" />
+      <RadioButton fx:id="slot3" layoutX="415.0" layoutY="297.0" mnemonicParsing="false" text="3" toggleGroup="$slot" />
+      <TextField fx:id="value" layoutX="331.0" layoutY="325.0" />
+      <Label layoutX="180.0" layoutY="327.0" text="Number of Doses">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

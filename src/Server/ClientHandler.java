@@ -1,5 +1,7 @@
 package Server;
 
+import Helper.ConnectionProvider;
+
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
@@ -70,12 +72,16 @@ public class ClientHandler implements Runnable {
                     downloadCertificate();
                 if(message.equals("UPLOAD"))
                     uploadMember();
+                if(message.equals("govtOfficial"))
+                    govtOfficial();
                 if(message.equals("DELETE_MEMBER"))
                     memberDelete();
                 if(message.equals("USER"))
                     user();
                 if(message.equals("DELETE_USER"))
                     userDelete();
+                if(message.equals("AddSlot"))
+                    AddSlot();
                 if(message.equals("LOGOUT")) {
                     System.out.println("Client disconnected");
                     break;
@@ -84,6 +90,74 @@ public class ClientHandler implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void AddSlot() {
+        try {
+            String phoneno=in.readLine();
+            int center= Integer.parseInt(in.readLine());
+            int vaccine= Integer.parseInt(in.readLine());
+            String dose=in.readLine();
+            int age= Integer.parseInt(in.readLine());
+            int slot= Integer.parseInt(in.readLine());
+            int value= Integer.parseInt(in.readLine());
+            Date dt= Date.valueOf(in.readLine());
+            if(dose.equals("dose1")) {
+                PreparedStatement stat = connect.prepareStatement("INSERT into Covax.slot(vaccinator_id,vaccin_id,dose1,age,datefor,timefor,center) VALUES(?,?,?, ?, ?, ?, ?)");
+
+                stat.setString(1, phoneno);
+                stat.setInt(2, vaccine);
+                stat.setInt(3, value);
+                stat.setInt(4, age);
+                stat.setDate(5, dt);
+                stat.setInt(6, slot);
+                stat.setInt(7, center);
+                stat.execute();
+            }
+            else
+            {
+                PreparedStatement stat = connect.prepareStatement("INSERT into Covax.slot(vaccinator_id,vaccin_id,dose2,age,datefor,timefor,center) VALUES(?,?,?, ?, ?, ?, ?)");
+
+                stat.setString(1, phoneno);
+                stat.setInt(2, vaccine);
+                stat.setInt(3, value);
+                stat.setInt(4, age);
+                stat.setDate(5, dt);
+                stat.setInt(6, slot);
+                stat.setInt(7, center);
+                stat.execute();
+            }
+
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void govtOfficial() {
+        String phone= null;
+        try {
+            phone = in.readLine();
+            String pass=in.readLine();
+
+            String query="select * from vaccinator where phone_no=? and password=?";
+            Connection con= ConnectionProvider.getConnection();
+            PreparedStatement pstmt=con.prepareStatement(query);
+            pstmt.setString(1, phone);
+            pstmt.setString(2, pass);
+            ResultSet set=pstmt.executeQuery();
+            if(set.next())
+            {
+                out.println("find");
+            }
+            else
+            {
+                out.println("not find");
+            }
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     private void downloadCertificate() {
