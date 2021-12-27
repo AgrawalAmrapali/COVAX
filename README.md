@@ -51,7 +51,7 @@ Features implemented -
 
 6. Show Statistics State and Country 
 
-![image](https://user-images.githubusercontent.com/72369965/147484847-84be7b29-ea80-4bb9-89f1-20f74ed4b88c.png)
+![image](https://user-images.githubusercontent.com/72369965/147485103-9fa06c30-6b90-4b75-9990-95ebd29b5e16.png)
 
 
 
