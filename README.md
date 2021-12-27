@@ -54,5 +54,12 @@ Features implemented -
 
 ![image](https://user-images.githubusercontent.com/72369965/147485103-9fa06c30-6b90-4b75-9990-95ebd29b5e16.png)
 
+How to implement the project:
+
+=> Upon getting the source code, import this in IntelliJ IDE or any other relevant IDE for JAVA and import activation.jar,gson.jar,itextpdf.jar,javax.mail.jar,json.jar.
+
+=> First start the Server, then start the Main.
+
+Proper documentations have been done at all the relevant locations.
 
 
