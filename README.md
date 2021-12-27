@@ -1,6 +1,7 @@
 # COVAX
 
 This is the project we have developed for Avishkar 2k21. It is a java desktop application developed using javafx. The IDE used is Intellij Idea. 
+Tech Stack: JAVA ,Socket Programming, Multi Threading and MYSQL.
 
 Features implemented -
 1. For Users 
