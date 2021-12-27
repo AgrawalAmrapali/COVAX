@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.UserLogin">
+    <children>
+        <AnchorPane layoutX="322.0" layoutY="-14.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="Login" layoutX="595.0" layoutY="384.0" mnemonicParsing="false" onAction="#LoginListener" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #4D648D;" text="Verify OTP" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <TextField fx:id="PhoneNo" alignment="CENTER" layoutX="403.0" layoutY="127.0" prefHeight="38.0" prefWidth="286.0" promptText="Enter the phone number" style="-fx-background-color: #82CAFF; &quot; text=&quot;Button&quot; textFill=&quot;#ebede4&quot; /&gt;         &lt;/children&gt;: ; &quot; text=&quot;Button&quot; textFill=&quot;#ebede4&quot; /&gt;         &lt;/children&gt;: ;">
+                    <font>
+                        <Font name="HP Simplified Light Italic" size="17.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="otp" alignment="CENTER" layoutX="403.0" layoutY="310.0" prefHeight="38.0" prefWidth="286.0" promptText="Enter the OTP">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </PasswordField>
+            <Label layoutX="324.0" prefHeight="73.0" prefWidth="476.0" style="-fx-background-color: #283655;" text="                      User Login" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="Sender" layoutX="383.0" layoutY="385.0" mnemonicParsing="false" onAction="#OTPSender" prefHeight="23.0" prefWidth="119.0" style="-fx-background-color: #4D648D;" text="Send OTP" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Email" alignment="CENTER" layoutX="403.0" layoutY="244.0" prefHeight="38.0" prefWidth="286.0" promptText="Enter the Email ID" style="-fx-background-color: #FFFFFF;">
+               <font>
+                  <Font name="HP Simplified Light Italic" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="533.0" layoutY="189.0" prefHeight="30.0" prefWidth="39.0" text="OR">
+               <font>
+                  <Font name="HP Simplified" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="515.0" layoutY="456.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #283655;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="19.0" />
+               </font>
+            </Button>
+              <ImageView fitHeight="600.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../Resources/photo-1605377347958-e8bd4c00ba1d.jpg" />
+                  </image>
+              </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

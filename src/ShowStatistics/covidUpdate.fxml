@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowStatistics.covidUpdate">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" prefHeight="56.0" prefWidth="817.0" style="-fx-background-color: #283655;" text="CHECK THE COVID UPDATE OF YOUR COUNTRY, DISTRICT OR STATE" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified" size="23.0" />
+         </font></Label>
+      <Button fx:id="Country" layoutX="509.0" layoutY="73.0" mnemonicParsing="false" onAction="#getCountry" style="-fx-background-color: #283655;" text="COVID UPDATE OF INDIA" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font></Button>
+      <TextField fx:id="stateName" layoutX="35.0" layoutY="174.0" prefHeight="22.0" prefWidth="263.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="12.0" />
+         </font></TextField>
+      <Button fx:id="State" layoutX="323.0" layoutY="172.0" mnemonicParsing="false" onAction="#getState" style="-fx-background-color: #283655;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Button>
+      <Label layoutX="36.0" layoutY="73.0" prefHeight="25.0" prefWidth="287.0" text="SEARCH HERE BY STATE NAME ">
+         <font>
+            <Font name="HP Simplified" size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="35.0" layoutY="387.0" prefHeight="165.0" prefWidth="562.0">
+         <children>
+            <Label fx:id="DistrictData" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="396.0" layoutY="-30.0" prefHeight="181.0" prefWidth="378.0" style="-fx-background-color: #D0E1F9;">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font></Label>
+            <Label fx:id="locate" contentDisplay="TOP" layoutY="-44.0" prefHeight="181.0" prefWidth="366.0" style="-fx-background-color: #D0E1F9;">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button fx:id="gobackbutton1" layoutX="346.0" layoutY="552.0" mnemonicParsing="false" onAction="#goback1" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #283655;" text="BACK TO MAIN MENU" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="countryD" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="451.0" layoutY="129.0" lineSpacing="2.0" prefHeight="225.0" prefWidth="360.0" style="-fx-background-color: #D0E1F9;">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font></Label>
+      <Label fx:id="timer" layoutX="498.0" layoutY="70.0" prefHeight="18.0" prefWidth="53.0" />
+      <Label layoutX="35.0" layoutY="137.0" text="ENTER STATE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="423.0" layoutY="75.0" orientation="VERTICAL" prefHeight="241.0" prefWidth="16.0" />
+      
+   </children>
+</AnchorPane>

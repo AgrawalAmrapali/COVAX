@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GovtLogin.UpdateDose">
+   <children>
+      <Label prefHeight="81.0" prefWidth="800.0" style="-fx-background-color: #283655;" text="                                    Update Dose Details" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="181.0" text="Member Id">
+         <font>
+            <Font name="HP Simplified Light" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="249.0" text="Dose">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="321.0" layoutY="319.0" mnemonicParsing="false" onAction="#updatedose" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #283655;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="16.0" />
+         </font></Button>
+      <TextField fx:id="member_id" layoutX="402.0" layoutY="181.0" />
+      <RadioButton fx:id="dose1" layoutX="400.0" layoutY="249.0" mnemonicParsing="false" text="Dose1">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="dose" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="dose2" layoutX="477.0" layoutY="249.0" mnemonicParsing="false" text="Dose2" toggleGroup="$dose">
+         <font>
+            <Font name="HP Simplified Light" size="15.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="back" layoutX="491.0" layoutY="319.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: #283655;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

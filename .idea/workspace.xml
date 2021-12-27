@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20623f41-7c16-4925-b8ed-d36b83ba8d88" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22imbUdSGoPtoPDFysbkSEbaSiS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ShowStatistics" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ShowStatistics" />
+      <recent name="SelfAssessment" />
+      <recent name="News" />
+      <recent name="Dashboard" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\COVAX\COVAX\src\ShowStatistics" />
+      <recent name="C:\Users\User\Desktop\COVAX\COVAX\src\Resources" />
+      <recent name="C:\Users\User\Desktop\COVAX\COVAX\src\SelfAssessment" />
+      <recent name="C:\Users\User\Desktop\COVAX\COVAX\src\News" />
+      <recent name="C:\Users\User\Desktop\COVAX\COVAX\src\Dashboard" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="COVAX" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\User\Desktop\javafx-sdk-11.0.2\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Server.MainServer" />
+      <module name="COVAX" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\User\Desktop\javafx-sdk-11.0.2\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Server" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20623f41-7c16-4925-b8ed-d36b83ba8d88" name="Default Changelist" comment="" />
+      <created>1640328852614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640328852614</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="267" y="39" key="#Inspections" timestamp="1640359236429">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="267" y="39" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1640359236429" />
+    <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640335608120">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1640335608120" />
+    <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640341575852">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="108" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1640341575852" />
+    <state x="348" y="102" key="FileChooserDialogImpl" timestamp="1640340938428">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="348" y="102" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1640340938428" />
+    <state width="1237" height="305" key="GridCell.Tab.0.bottom" timestamp="1640599095173">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="305" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1640599095173" />
+    <state width="1237" height="305" key="GridCell.Tab.0.center" timestamp="1640599095173">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="305" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1640599095173" />
+    <state width="1237" height="305" key="GridCell.Tab.0.left" timestamp="1640599095172">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="305" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1640599095172" />
+    <state width="1237" height="305" key="GridCell.Tab.0.right" timestamp="1640599095173">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="305" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1640599095173" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1640340946239">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1640340946239" />
+  </component>
+</project>

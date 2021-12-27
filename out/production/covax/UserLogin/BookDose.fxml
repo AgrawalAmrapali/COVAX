@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.BookDose">
+    <TableView fx:id="table" layoutX="87.0" layoutY="200.0" prefHeight="200.0" prefWidth="622.0">
+        <columns>
+            <TableColumn fx:id="slot_id" prefWidth="58.39999008178711" text="Slot ID" />
+            <TableColumn fx:id="date" prefWidth="82.39999389648438" text="Date" />
+            <TableColumn fx:id="age" minWidth="0.0" prefWidth="45.600006103515625" text="Age" />
+            <TableColumn fx:id="city" prefWidth="105.40003967285156" text="City Name" />
+            <TableColumn fx:id="col_Dose1" minWidth="0.0" prefWidth="64.19998168945312" text="Dose 1" />
+            <TableColumn fx:id="col_Dose2" prefWidth="61.39996337890625" text="Dose 2" />
+            <TableColumn fx:id="col_Vaccine" prefWidth="128.0" text="Vaccine Name" />
+         <TableColumn fx:id="slot" prefWidth="73.0" text="Slot" />
+         
+        </columns>
+    </TableView>
+   <Label layoutY="-1.0" prefHeight="95.0" prefWidth="800.0" style="-fx-background-color: #283655;" text="                                            Book Dose" textFill="WHITE">
+      <font>
+         <Font name="HP Simplified" size="36.0" />
+      </font>
+   </Label>
+   <Button layoutX="388.0" layoutY="427.0" mnemonicParsing="false" onAction="#book" style="-fx-background-color: #283655;" text="Book" textFill="WHITE" />
+   <Button layoutX="209.0" layoutY="427.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #283655;" text="Refresh" textFill="WHITE" />
+   <RadioButton fx:id="state" layoutX="160.0" layoutY="134.0" mnemonicParsing="false" text="State" textFill="#1e1f26">
+      <toggleGroup>
+         <ToggleGroup fx:id="search" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="district" layoutX="228.0" layoutY="134.0" mnemonicParsing="false" text="District" textFill="#1e1f26" toggleGroup="$search">
+      <font>
+         <Font name="HP Simplified Light" size="12.0" />
+      </font></RadioButton>
+   <RadioButton fx:id="cityw" layoutX="303.0" layoutY="134.0" mnemonicParsing="false" text="City" textFill="#1e1f26" toggleGroup="$search" />
+   <Label layoutX="87.0" layoutY="134.0" text="Search by-" textFill="#1e1f26" />
+   <TextField fx:id="idd" layoutX="485.0" layoutY="130.0" prefHeight="26.0" prefWidth="228.0" promptText="Write name of State or District or City">
+      <font>
+         <Font name="HP Simplified Light Italic" size="12.0" />
+      </font></TextField>
+   <Button fx:id="back" layoutX="558.0" layoutY="427.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #283655;" text="Back" textFill="WHITE" />
+
+</AnchorPane>

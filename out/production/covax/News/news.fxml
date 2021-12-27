@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="800.0" prefWidth="800.0" vgap="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="News.News">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;">
+         <children>
+            <Button layoutX="39.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickListener" style="-fx-background-color: #4D648D;" text="Corona Virus Statistics in India" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Button>
+            <Label layoutX="-1.0" prefHeight="54.0" prefWidth="800.0" style="-fx-background-color: #283655;" text="                                            NEWS FEED AND UPDATES" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="whoAdvice" layoutX="437.0" layoutY="99.0" mnemonicParsing="false" onAction="#clickWhoadvice" style="-fx-background-color: #4D648D;" text="WHO advice for the Public" textFill="WHITE" />
+            <Button fx:id="dosAnddonts" layoutX="222.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickDosanddonts" style="-fx-background-color: #4D648D;" text="DO's and DON'TS During COVID" textFill="WHITE" />
+            <Button fx:id="afterPositive" layoutX="35.0" layoutY="99.0" mnemonicParsing="false" onAction="#clickAfterpositive" style="-fx-background-color: #4D648D;" text="What to do After I Tested Positive For COVID?" textFill="WHITE" />
+            <Button fx:id="foodCovid" layoutX="32.0" layoutY="167.0" mnemonicParsing="false" onAction="#clickFoodcovid" style="-fx-background-color: #4D648D;" text="Food and nutrition tipsduring self-quarantine" textFill="WHITE" />
+            <Button fx:id="everythingCovid" layoutX="35.0" layoutY="132.0" mnemonicParsing="false" onAction="#clickEverythingcovid" style="-fx-background-color: #4D648D;" text="Important Articles on COVID-19" textFill="WHITE" />
+            <Button fx:id="worldCovid" layoutX="30.0" layoutY="198.0" mnemonicParsing="false" onAction="#clickWorldcovid" style="-fx-background-color: #4D648D;" text="WHO Coronavirus Disease (COVID-19) Dashboard" textFill="WHITE" />
+            <Button fx:id="covidTesting" layoutX="310.0" layoutY="99.0" mnemonicParsing="false" onAction="#clickCovidtesting" style="-fx-background-color: #4D648D;" text="COVID Testing FAQ" textFill="WHITE" />
+            <Button fx:id="Everything" layoutX="440.0" layoutY="132.0" mnemonicParsing="false" onAction="#clickEverything" prefHeight="25.0" prefWidth="267.0" style="-fx-background-color: #4D648D;" text="Everything You Need to Know About Covid 19" textFill="WHITE" />
+            <Button fx:id="Faq" layoutX="321.0" layoutY="198.0" mnemonicParsing="false" onAction="#clickfaq" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #4D648D;" text="Covid-19 Related FAQ" textFill="WHITE" />
+            <Button fx:id="covidOlder" layoutX="295.0" layoutY="167.0" mnemonicParsing="false" onAction="#clickcovidolder" style="-fx-background-color: #4D648D;" text="COVID - Older People" textFill="WHITE" />
+            <Button fx:id="Oldtips" layoutX="434.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #4D648D;" text="Coronavirus Tips and Advice for Older Adults" textFill="#fffdfd" />
+            <Button fx:id="covidGoi" layoutX="236.0" layoutY="132.0" mnemonicParsing="false" onAction="#clickcovidgoi" style="-fx-background-color: #4D648D;" text="Measures Taken by Govt. of India" textFill="WHITE" />
+            <Button fx:id="economicIndia" layoutX="474.0" layoutY="198.0" mnemonicParsing="false" onAction="#clickEconomicindia" prefHeight="25.0" prefWidth="302.0" style="-fx-background-color: #4D648D;" text="Economic impact of the COVID-19 pandemic in India" textFill="WHITE" />
+            <Button fx:id="worldEco" layoutX="422.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickworldeco" style="-fx-background-color: #4D648D;" text="COVID Impact on the World" textFill="WHITE" />
+            <Button fx:id="gobackbutton3" layoutX="502.0" layoutY="245.0" mnemonicParsing="false" onAction="#goBack3" style="-fx-background-color: #283655;" text="BACK TO MAIN MENU" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="mental" layoutX="597.0" layoutY="68.0" mnemonicParsing="false" onAction="#clickmental" style="-fx-background-color: #4D648D;" text="Mental Health" textFill="WHITE" />
+            <Button layoutX="101.0" layoutY="245.0" mnemonicParsing="false" onAction="#openHelp" style="-fx-background-color: #283655;" text="SHOW HELPLINE NUMBERS STATE WISE" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Light" size="17.0" />
+               </font></Button>
+            <Label fx:id="help1" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="65.0" layoutY="316.0" prefHeight="341.0" prefWidth="341.0" style="-fx-background-color: #D0E1F9;" text="Label">
+               <font>
+                  <Font name="HP Simplified Light" size="12.0" />
+               </font></Label>
+            <Label fx:id="help2" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="437.0" layoutY="316.0" prefHeight="341.0" prefWidth="320.0" style="-fx-background-color: #D0E1F9;" text="Label">
+               <font>
+                  <Font name="HP Simplified Light" size="12.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="316.0" />
+            <Button layoutX="606.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: #4D648D;" text="Which Vaccine is best for you" textFill="WHITE" />
+            <Button layoutX="698.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #4D648D;" text="Vaccine FAQ" textFill="WHITE" />
+            <Button layoutX="719.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: #4D648D;" text="Omicron" textFill="WHITE" />
+            <Button layoutX="699.0" layoutY="68.0" mnemonicParsing="false" style="-fx-background-color: #4D648D;" text="New Variant" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

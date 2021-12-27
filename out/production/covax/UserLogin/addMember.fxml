@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D0E1F9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLogin.AddMember">
+    <children>
+        <Label layoutY="-1.0" prefHeight="94.0" prefWidth="800.0" style="-fx-background-color: #283655;" text="                                             Add Member" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="HP Simplified" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="173.0" prefHeight="18.0" prefWidth="141.0" text="Member ID proof Number">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+        <Label layoutX="149.0" layoutY="130.0" text="Member Name">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+        <Label layoutX="131.0" layoutY="220.0" text="Gender of Member">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+        <TextField fx:id="MemName" layoutX="265.0" layoutY="126.0" />
+        <TextField fx:id="IdProof" layoutX="265.0" layoutY="169.0" />
+        <Button fx:id="RegisterButton" layoutX="589.0" layoutY="376.0" mnemonicParsing="false" onAction="#BrowseClicked" style="-fx-background-color: #283655;" text="Browse" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Light" size="12.0" />
+         </font></Button>
+        <Label layoutX="202.0" layoutY="343.0" text="Upload Member ID proof here">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+        <ListView fx:id="fileBox" layoutX="202.0" layoutY="376.0" prefHeight="26.0" prefWidth="339.0" />
+        <Button fx:id="submit" layoutX="310.0" layoutY="437.0" mnemonicParsing="false" onAction="#uploadClicked" style="-fx-background-color: #283655;" text="Submit" textFill="WHITE" />
+      <Label layoutX="351.0" layoutY="212.0" prefHeight="34.0" prefWidth="200.0" text="Enter &quot;F&quot; for Female and &quot;M&quot; for Male">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+      <Label layoutX="202.0" layoutY="278.0" text="Age">
+         <font>
+            <Font name="HP Simplified Light" size="13.0" />
+         </font></Label>
+      <TextField fx:id="Age" layoutX="265.0" layoutY="274.0" />
+      <TextField fx:id="Gen" layoutX="265.0" layoutY="216.0" prefHeight="26.0" prefWidth="72.0" />
+      <Button fx:id="back" layoutX="478.0" layoutY="437.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #283655;" text="Back" textFill="WHITE" />
+    </children>
+
+</AnchorPane>
